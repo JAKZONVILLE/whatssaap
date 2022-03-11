@@ -38,6 +38,7 @@ main
     height: 100%
     overflow-x: auto
     overflow-y: hidden
+    display: flex
 
 .container
     display: flex
@@ -65,6 +66,7 @@ main
                 background: none
 
         #botones
+            color: white
             flex-flow: row
             display: flex
             justify-content: space-between
@@ -141,10 +143,24 @@ main
                 margin-right: 0.5rem
 
 .c-main
-    width: 400%
-    height: calc( 100% - 6rem )
+    // width: 400%
+    // height: calc( 100% - 6rem )
     display: flex
+    flex: 0 0 400%
     flex-flow: row
+    
+    
+section
+    flex: .25
+    overflow: auto
+    
+
+
 
 .select
     border-bottom: 2px solid white
+
+#llamadas, .material-icons
+
+    color: green
+

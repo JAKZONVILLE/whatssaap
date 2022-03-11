@@ -47,6 +47,9 @@ main {
   height: 100%;
   overflow-x: auto;
   overflow-y: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .container {
@@ -89,6 +92,7 @@ main {
 }
 
 .container nav #botones {
+  color: white;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
@@ -182,15 +186,23 @@ main {
 }
 
 .c-main {
-  width: 400%;
-  height: calc( 100% - 6rem);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 400%;
+          flex: 0 0 400%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-flow: row;
           flex-flow: row;
+}
+
+section {
+  -webkit-box-flex: .25;
+      -ms-flex: .25;
+          flex: .25;
+  overflow: auto;
 }
 
 .select {
